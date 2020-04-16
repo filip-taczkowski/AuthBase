@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/logged', (req, res) => {
-	res.render('logged');
+	res.render('logged', { name: req.user.displayName, image: req.user.photos[0].value });
 });
 
 router.get('/no-permission', (req, res) => {

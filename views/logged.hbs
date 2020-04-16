@@ -2,10 +2,15 @@
   <p class="success">
     You have been successfully logged in!
   </p>
-    <a href='/user/profile'>
+  <img src={{ image }} class='avatar'>
+  <h1>Hello <b>{{ name }}</b>!</h1>
+  <a href='/user/profile'>
     User profile
   </a><br>
   <a href='/user/profile/settings'>
     Profile settings
+  </a><br>
+  <a href='/logout'>
+    Logout
   </a>
 </section>
